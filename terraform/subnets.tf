@@ -9,7 +9,7 @@ resource "aws_subnet" "public_1" {
     }
 }
 
-resource "aws_subnet" "private_2" {
+resource "aws_subnet" "public_2" {
     vpc_id = aws_vpc.vpc.vpc_id
     cidr_block = var.public_subnets[1]
     availability_zone = var.availability_zone[1]
